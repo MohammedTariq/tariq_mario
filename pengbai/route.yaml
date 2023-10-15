@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: nginxpod
+  name: pengbairoute
   namespace: default
 spec:
   host: nginxpod-default.apps-crc.testing
