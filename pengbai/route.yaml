@@ -4,7 +4,7 @@ metadata:
   name: pengbairoute
   namespace: default
 spec:
-  host: nginxpod-default.apps-crc.testing
+  host: pengbairoute-default.apps-crc.testing
   to:
     kind: Service
     name: pengbai
