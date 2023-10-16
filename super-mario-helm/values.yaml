@@ -1,6 +1,6 @@
 kubernetesClusterDomain: cluster.local
 superMario:
-  replicas: 1
+  replicas: 0 
   superMario:
     image:
       repository: kaminskypavel/mario
