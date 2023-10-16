@@ -1,0 +1,14 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: super-mario
+  namespace: default
+spec:
+  host: super-mario-default.apps-crc.testing
+  to:
+    kind: Service
+    name: super-mario
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
