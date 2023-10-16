@@ -4,7 +4,7 @@ metadata:
   name: pengbai
   namespace: default
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: pengbai
@@ -33,9 +33,6 @@ spec:
       securityContext: {}
       schedulerName: default-scheduler
   strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
+    type: OnDelete
   revisionHistoryLimit: 10
   progressDeadlineSeconds: 600

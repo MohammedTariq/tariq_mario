@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: nginx
   destination:
-    server: api-crc-testing:6443
+    server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     syncOptions:
